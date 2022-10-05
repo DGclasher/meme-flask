@@ -1,3 +1,4 @@
 # Meme Flask
 
-Fetch memes from reddit using this script
+https://dg-memes.herokuapp.com/
+
