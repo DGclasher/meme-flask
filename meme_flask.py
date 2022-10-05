@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 def get_meme():
     #Uncomment these two lines and comment out the other url line if you want to use a specific meme subreddt
-    # sr = "/indiandankmemes"
+    # sr = "/"
     # url = "https://meme-api.herokuapp.com/gimme" + sr
     url = "https://meme-api.herokuapp.com/gimme"
     response = json.loads(requests.request("GET", url).text)
