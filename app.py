@@ -1,15 +1,11 @@
-#!/usr/bin/python3
-
+import os
 from flask import Flask, render_template
 import requests
 import json
 
 app = Flask(__name__)
-
+app.static_folder = 'static'
 def get_meme():
-    #Uncomment these two lines and comment out the other url line if you want to use a specific meme subreddt
-    # sr = "/"
-    # url = "https://meme-api.herokuapp.com/gimme" + sr
     url = "https://meme-api.herokuapp.com/gimme"
     response = json.loads(requests.request("GET", url).text)
     meme_large = response["preview"][-2]
@@ -21,4 +17,6 @@ def index():
 	meme_pic, subreddit = get_meme()
 	return render_template("index.html", meme_pic=meme_pic, subreddit=subreddit)
 
-app.run(host="0.0.0.0", port=80)
+# if __name__ == "main":
+    # port  = int(os.environ.get("PORT", 3000))
+app.run(debug=False, port=5000)
