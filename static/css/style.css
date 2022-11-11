@@ -19,13 +19,18 @@ p{
 img{
     width: 100%;
     max-width: 500px;
+    min-width: 500px;
     max-height: 400px;
+    min-height: 400px;
 }
 
 .copyright{
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
+    text-align: left;
     position: sticky;
+    bottom: 0;
+    height: 10px;
     margin-bottom: 5px;
 }
 
