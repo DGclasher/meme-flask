@@ -23,6 +23,6 @@ def index():
     return render_template("index.html", meme_pic=meme_pic, year=year_now, subreddit=subreddit)
 
 
-if __name__ == "main":
+# if __name__ == "main":
     # port  = int(os.environ.get("PORT", 3000))
-    app.run(debug=False)
+app.run(debug=False, port=5000)
