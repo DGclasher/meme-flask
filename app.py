@@ -24,5 +24,5 @@ def index():
 
 
 if __name__ == "main":
-    the_port  = int(os.environ.get("PORT", 3000))
-    app.run(port=the_port ,debug=False)
+    # the_port  = int(os.environ.get("PORT", 3000))
+    app.run(debug=False)
