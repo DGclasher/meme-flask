@@ -25,9 +25,9 @@ img{
 
 .copyright{
     font-family: 'Kanit', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
-    position: sticky;
+    position: absolute;
     bottom: 30;
     height: 10px;
     margin-bottom: 5px;
